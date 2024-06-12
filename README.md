@@ -1,0 +1,2 @@
+# pages
+Static Website
