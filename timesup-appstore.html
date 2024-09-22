@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time's Up App Store Redirect</title>
+</head>
+<body>
+    <script>
+        function redirectToAppStore() {
+            if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+                window.location.href = "https://apps.apple.com/us/app/your-app-name"; // Replace with your app's URL
+            } else if (navigator.userAgent.match(/Android/i)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=your.app.package"; // Replace with your app's package name
+            } else {
+                alert("This app is not available on your device.");
+            }
+        }
+
+        redirectToAppStore();
+    </script>
+</body>
+</html>
